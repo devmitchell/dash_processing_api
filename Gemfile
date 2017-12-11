@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 
 gem 'config', '~> 1.6.1'
+gem 'twilio-ruby', '~> 5.5.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
