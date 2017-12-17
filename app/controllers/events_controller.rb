@@ -3,7 +3,8 @@ class EventsController < ApplicationController
     event = Event.new event_params
 
     if event.valid?
-      # TODO: Notify here
+      notifier = SmsNotifier.new
+      notifier.call(recipients: Settings.twilio.to_phone, message: 'Test Run')
       render status: 201
     else
       render status: 422, json: { errors: event.errors }
