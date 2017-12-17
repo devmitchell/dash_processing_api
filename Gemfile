@@ -6,8 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.4'
-gem 'sqlite3'
 gem 'puma', '~> 3.7'
+gem 'pg', '~> 0.21.0'
 
 gem 'config', '~> 1.6.1'
 gem 'twilio-ruby', '~> 5.5.1'
@@ -21,6 +21,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails', '~> 3.7.2'
+end
+
+group :test do
+  gem 'sqlite3'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
