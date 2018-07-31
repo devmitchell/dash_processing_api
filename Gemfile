@@ -5,12 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.4'
-gem 'puma', '~> 3.7'
-gem 'pg', '~> 0.21.0'
+gem 'rails', '~> 5.2.0'
+gem 'puma', '~> 3.12'
+gem 'pg', '~> 1.0.0'
 
-gem 'config', '~> 1.6.1'
-gem 'twilio-ruby', '~> 5.5.1'
+gem 'config', '~> 1.7.0'
+gem 'twilio-ruby', '~> 5.11.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
