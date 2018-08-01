@@ -23,6 +23,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails', '~> 3.7.2'
+  gem 'rubocop'
 end
 
 group :test do
