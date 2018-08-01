@@ -1,0 +1,5 @@
+twilio:
+  account_sid: YadsfkDSFkesfkueYKOHdkdl
+  auth_token: 882829fdf93f97282bdfa92626cd2929a
+  phone_number: !!str +15555550000
+  to_phone: !!str +15555551111
